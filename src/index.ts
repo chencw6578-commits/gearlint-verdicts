@@ -21,8 +21,8 @@ export {
   emptyCircleRun,
   accumulateCircleRun,
   evaluateCircleRun,
-} from './drift';
-export type { StickSample, StickStats } from './drift';
+} from './drift.js';
+export type { StickSample, StickStats } from './drift.js';
 
 // Key chatter
 export {
@@ -38,7 +38,7 @@ export {
   chatterVerdict,
   applyChatterThreshold,
   resetBaselines,
-} from './chatter';
+} from './chatter.js';
 
 // Mouse double-click / CPS
 export {
@@ -55,7 +55,7 @@ export {
   perButtonGaps,
   perButtonGapsWithMeta,
   CPS_DURATION_MS,
-} from './clicks';
+} from './clicks.js';
 
 // Dead zone
 export {
@@ -69,7 +69,7 @@ export {
   tickProbe,
   judgeDeadzone,
   worstOf,
-} from './deadzone';
+} from './deadzone.js';
 
 // Scroll wheel
 export {
@@ -77,7 +77,7 @@ export {
   newWheelState,
   recordWheel,
   wheelCheck,
-} from './wheel';
+} from './wheel.js';
 
 // Reaction time & aim
 export {
@@ -97,4 +97,4 @@ export {
   aimEnd,
   aimAccuracy,
   aimAvgHitMs,
-} from './reaction';
+} from './reaction.js';

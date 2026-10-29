@@ -4,6 +4,14 @@ Input-testing verdict engines for browsers — pure TypeScript, zero dependencie
 
 This is the threshold and classification logic behind [GearLint](https://www.gearlint.com)'s hardware tests: how a stick's resting wobble becomes a drift verdict, what counts as key chatter, when double-clicking is a fault versus fast fingers.
 
+## Install
+
+```bash
+npm install gearlint-verdicts
+```
+
+Ships as ESM with TypeScript declarations — no dependencies, works in Node, workers and any bundler.
+
 ## What's inside
 
 | Module | What it decides |
@@ -18,7 +26,7 @@ This is the threshold and classification logic behind [GearLint](https://www.gea
 Example — the drift verdict:
 
 ```ts
-import { emptyStats, accumulateSample, judgeDrift, DEFAULT_DRIFT_THRESHOLD } from './src/drift.ts';
+import { emptyStats, accumulateSample, judgeDrift, DEFAULT_DRIFT_THRESHOLD } from 'gearlint-verdicts';
 
 let stats = emptyStats();
 for (const sample of samples) {          // { x, y } pairs sampled from Gamepad API

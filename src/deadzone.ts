@@ -17,7 +17,7 @@
  * 会让探测在推程一开始就误判"已响应"，死区被低估；连续帧要求把
  * 这种毛刺挡掉，与 drift.ts 的 DRIFT_MIN_SAMPLES 同一思路。
  */
-import type { StickSample } from './drift'
+import type { StickSample } from './drift.js'
 
 /** 静置窗口：基线采样时长。1.5s 足够滤掉手放上去的初始抖动。 */
 export const REST_MS = 1500
