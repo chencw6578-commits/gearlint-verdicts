@@ -1,0 +1,32 @@
+{
+  "name": "gearlint-verdicts",
+  "version": "1.0.0",
+  "description": "Browser input-testing verdict engines — stick drift, key chatter, double-click, dead zone, wheel and reaction timing. The threshold logic behind gearlint.com.",
+  "license": "MIT",
+  "author": "C. W. Chen",
+  "homepage": "https://www.gearlint.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chencw6578-commits/gearlint-verdicts.git"
+  },
+  "keywords": [
+    "stick-drift",
+    "gamepad",
+    "controller",
+    "keyboard",
+    "chatter",
+    "double-click",
+    "deadzone",
+    "input-testing",
+    "typescript"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.6.0"
+  }
+}
